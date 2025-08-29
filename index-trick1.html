@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="back.css">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .photo{
+            border: 10px groove darkred;
+            width: 400px;
+            height: 400px;
+            margin: 230px 200px;
+            position: relative;
+            &::before, &::after{    
+                position: absolute;
+                content: '';
+                transition: 2s;
+            }
+            &:hover{
+            >figcaption{
+                opacity: 1;
+            }
+
+            &::before{
+                background-color: rgba(70, 47, 47, 0.7);
+            }
+
+            &::after{
+                height: 50%;
+            }
+                
+            >div{
+                &:nth-of-type(1){
+                    width: 40%;
+                }
+                &:nth-of-type(2){
+                    height: 65%;
+                }
+                &:nth-of-type(3){
+                    width: 60%;
+                }
+              }
+            }
+            >*{
+                position: absolute;
+                transition: 1s;
+            }
+            >img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &::before{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(70, 47, 47, 0);
+                top: 0; left: 0;
+                z-index: 1;
+                position: absolute;
+            }
+            >figcaption{
+                color: rgb(255, 187, 0);
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                width: 50%;
+                /* border: 2px solid red; */
+                opacity: 0;
+                font-size: 18px;
+                top: 20%;
+                left: 20%;
+                z-index: 2;
+                position: absolute;
+            }
+            >figcaption>p{
+                position: relative;
+                left: -5%;
+                top: 125px;
+                font-size: 15px;
+            }
+
+            &::after{
+                width: 4px;
+                height: 0;
+                left: 15%;
+                top: 0;
+                background-color: darkred;
+                z-index: 3;
+            }
+            >div{
+                background-color: darkred;
+                &:nth-of-type(1){
+                    width: 0;
+                    height: 4px;
+                    right: 10;
+                    top: 15%;
+                    z-index: 3;
+
+                }
+                &:nth-of-type(2){
+                    width: 4px;
+                    height: 0;
+                    right: 15%;
+                    bottom: 0;
+                    z-index: 3;
+                }
+                &:nth-of-type(3){
+                    width: 0;
+                    height: 4px;
+                    right: 0;
+                    top: 85%;
+                    z-index: 3;
+                    
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <figure class="photo">
+        <img src="img/me.jpg" alt="">
+        <figcaption>
+            <h3>Prynix</h3>
+            <br>
+            <p>Pry=Parinaz
+                <br>
+                Nix=Phoenix
+                <br>
+                A symbol of resilience and immortality
+            </p>
+        </figcaption>
+
+        <div></div>
+        <div></div>
+        <div></div>
+    </figure>
+</body>
+</html>
