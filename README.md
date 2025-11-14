@@ -1,6 +1,5 @@
 # 🐦‍🔥 Like a Phoenix Project  
 <h3>It's Me</h3>
-<br>
 
 ## 🔗 Live Demo
 - [Live Demo 1](https://prynix-dev.github.io/First-Trick/index3-trick1.html)
